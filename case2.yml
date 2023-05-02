@@ -1,0 +1,8 @@
+---
+ - name: with loop
+   hosts: nagu9
+   tasks:
+   - service: name={{item}} state=restarted
+     loop:
+      - httpd
+      - sshd
