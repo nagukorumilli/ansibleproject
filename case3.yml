@@ -1,0 +1,9 @@
+---
+ - name: without loop
+   hosts: nagu9
+   tasks:
+   - yum:
+      name:
+        - httpd
+        - vsftpd
+      state: present
