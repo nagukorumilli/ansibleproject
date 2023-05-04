@@ -1,0 +1,5 @@
+---
+ - name: fire below command
+   hosts: nagu9
+   tasks:
+   - command: uname -r
