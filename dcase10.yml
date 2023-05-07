@@ -1,0 +1,11 @@
+---
+ - name: print the below message
+   hosts: nagu9
+   tasks:
+   - name: using tags
+     tags: date
+     command: date
+     register: date
+   - debug:
+      msg: '{{date.stdout}}'
+#     var: date.stdout
