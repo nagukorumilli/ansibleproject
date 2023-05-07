@@ -1,0 +1,9 @@
+---
+ - name: print the below message
+   hosts: nagu9
+   tasks:
+   - name: using msg
+     debug:
+      msg:
+          my hostname is {{inventory_hostname}}
+          my ip is {{ansible_facts ['fqdn']}}
