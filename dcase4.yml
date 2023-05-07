@@ -1,0 +1,7 @@
+---
+ - name: print the below message
+   hosts: nagu9
+   tasks:
+   - name: using msg
+     debug:
+      msg: 'hostname is {{inventory_hostname}}'

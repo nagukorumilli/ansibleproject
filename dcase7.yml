@@ -1,0 +1,8 @@
+---
+ - name: print the below message
+   hosts: nagu9
+   tasks:
+   - name: using verbosity
+     debug:
+      msg: 'NAGU'
+#     verbosity: 3
