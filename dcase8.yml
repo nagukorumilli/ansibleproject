@@ -1,0 +1,10 @@
+---
+ - name: print the below message
+   hosts: nagu9
+   tasks:
+   - name: using register
+     command: uname -a
+     register: kernel
+   - debug:
+      msg: '{{kernel}}'
+#     var: kernel
