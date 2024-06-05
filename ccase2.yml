@@ -18,4 +18,4 @@
      fetch: src=/etc/fstab dest=/tmp/fstab flat=yes
 
    - name: copy the file from client to server
-     fetch: src=/etc/fstab dest=/tmp/{inventory_hostname}_fstab flat=yes
+     fetch: src=/etc/fstab dest=/tmp/{{inventory_hostname}}_fstab flat=yes
